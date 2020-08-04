@@ -11,6 +11,25 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call('UsersTableSeeder');
+        DB::table('campaigns')->insert([
+            'affiliateId' => 1,
+            'primaryCategory' => 'Girl',
+            'tags'  => '',
+            'language' => ''
+        ]);
+
+        DB::table('campaigns')->insert([
+            'affiliateId' => 1,
+            'primaryCategory' => 'Girl',
+            'tags'  => '',
+            'language' => 'hu'
+        ]);
+
+        DB::table('campaigns')->insert([
+            'affiliateId' => 1,
+            'primaryCategory' => 'Girl',
+            'tags' => 'Ass_Play,Bondage',
+            'language' => ''
+        ]);
     }
 }
